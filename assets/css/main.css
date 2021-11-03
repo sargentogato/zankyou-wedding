@@ -126,8 +126,6 @@ img {
   color: white;
   padding-left: 0.5rem;
   font-size: 1.2rem;
-  /* line-height: calc(3em / 4); */
-  vertical-align: -0.0667em;
 }
 
 @media (min-width: 460px) {
