@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/favicon/favicon.ico"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- magnificpopup -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/resources/magnificpopup.css"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  </head>
+  <body>
+    <!-- Part 1 -->
+    <div class="container">
+      <header class="header">
+        <div class="header__image">
+          <picture>
+            <source
+              media="(max-width: 465px)"
+              srcset="./assets/img/hero-bg--mobile.jpg 465w"
+            />
+            <source
+              media="(min-width: 466px)"
+              srcset="./assets/img/hero-bg--desktop.jpg 1850w"
+            />
+            <img
+              src="./assets/img/hero-bg--desktop.jpg"
+              alt="Zankyou Wedding"
+            />
+          </picture>
+          <div class="header__content">
+            <h1 class="title">Completa la información del formulario</h1>
+            <h3 class="subtitle">Estos son los datos a rellenar</h3>
+            <form class="form" action="">
+              <input
+                class="input-name"
+                id="name"
+                type="text"
+                placeholder="Escribe tu nombre"
+              />
+              <input
+                class="input-adress"
+                id="address"
+                type="text"
+                placeholder="Lugar de nacimiento"
+              />
+              <button class="btn-show" id="showInfo" type="submit">
+                Mostrar <i class="fal fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- Part 2 -->
+
+    <!-- Bonus point -->
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/resources/jquery.magnificpopup.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

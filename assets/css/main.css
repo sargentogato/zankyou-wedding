@@ -1,0 +1,229 @@
+/* CSS Stuff */
+:root {
+  --font-size-title: 1.5rem;
+  --font-size-subtitle: 1.2rem;
+  --color-title: hsl(0, 0%, 100%);
+  --color-subtitle: hsl(183, 24%, 65%);
+  --color-button-show: #d5563c;
+  --font-size-text-button: 1.2rem;
+  --font-size-input: 0.8rem;
+  --letter-spacing: 0.025rem;
+  --padding-button-x: 0.5rem;
+}
+
+body {
+  height: 100vh;
+}
+
+.show-modal {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  font-size: var(--font-size-text-button);
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--color-button-show);
+  border: 1px solid var(--color-button-show);
+  color: white;
+  letter-spacing: var(--letter-spacing);
+  outline-style: none;
+  font-weight: 400;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  padding-left: var(--padding-button-x);
+  padding-right: var(--padding-button-x);
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  filter: brightness(80%);
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.header__image {
+  position: absolute;
+  width: 100%;
+}
+
+.header__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.title,
+.subtitle {
+  flex-basis: 100%;
+  text-align: center;
+  transform: scaleX(1);
+  padding: 0 1rem;
+}
+
+.title {
+  mix-blend-mode: hard-light;
+  text-shadow: 0 1px 0 rgb(0, 0, 0), 0 1px 0 var(--color-title);
+  font-size: var(--font-size-title);
+  color: var(--color-title);
+}
+
+.subtitle {
+  text-shadow: 0 1px 0 black, 0 1px 0 var(--color-subtitle);
+  font-size: var(--font-size-subtitle);
+  color: var(--color-subtitle);
+  font-weight: 400;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.input-name,
+.input-adress,
+.btn-show {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  border-radius: 2px;
+  outline-style: none;
+}
+
+.input-name,
+.input-adress {
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border: 1px solid white;
+  font-size: var(--font-size-input);
+  letter-spacing: var(--letter-spacing);
+}
+
+.input-adress {
+  background-image: url(../img/zankyou--geolocation.png);
+  background-position: 98% 50%;
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+}
+
+.btn-show {
+  font-size: var(--font-size-text-button);
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--color-button-show);
+  border: 1px solid var(--color-button-show);
+  color: white;
+  letter-spacing: var(--letter-spacing);
+  outline-style: none;
+  font-weight: 400;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  padding-left: var(--padding-button-x);
+  padding-right: var(--padding-button-x);
+  text-transform: uppercase;
+}
+
+.fa-arrow-right {
+  color: white;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+  /* line-height: calc(3em / 4); */
+  vertical-align: -0.0667em;
+}
+
+@media (min-width: 460px) {
+  .title {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .subtitle {
+    font-size: 1.5;
+  }
+
+  .input-name,
+  .input-adress {
+    flex-basis: 40%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .btn-show {
+    flex-basis: 20%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 530px) {
+  .input-name,
+  .input-adress {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.7rem;
+  }
+
+  .form {
+    padding: 0 3rem;
+    gap: 0.5rem;
+  }
+
+  .input-name,
+  .input-adress {
+    flex-basis: 35%;
+    font-size: 1.2rem;
+  }
+
+  .btn-show {
+    flex-basis: 25%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 970px) {
+  .btn-show {
+    flex-basis: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-show {
+    flex-basis: 10%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .btn-show {
+    flex-basis: 7%;
+  }
+}
